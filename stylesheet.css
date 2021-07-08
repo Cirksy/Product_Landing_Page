@@ -1,0 +1,255 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d3d3d3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/** changing the sumbit and select buttons **/
+.btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: capitalize;
+    border: 3px #000 solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    align-self: flex-start;
+}
+
+header {
+    position: relative;
+    min-height: 75px;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5b328;
+}
+
+.logo {
+    width: 60vw;
+}
+
+.logo > img {
+    width: 100%;
+    height: auto;
+    max-width: 75px;
+    display: flex;
+    margin-left: 50px;
+}
+
+/** Making the navigation bar at the top have the similar color to logo and boldening the text**/
+nav {
+    font-weight: bold;
+    background-color: #f4b31e;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    background-color: #f4b31e;
+  }
+
+  nav > li {
+    padding-bottom: 5px;
+    list-style: none;
+  }
+}
+
+nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+    flex-direction: column;
+  }
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#hero > h1 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+#hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+
+#hero input[type='submit'] {
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 3px;
+    background-color: #f5b328;
+}
+
+#features {
+    margin-top: 30px;
+    justify-content: left;
+}
+
+#features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 20vw;
+    color: #f5b328;
+}
+
+#features .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#about > iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* changes size and shape of the 3 boxes at the bottom (product boxes) */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    padding-top: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    font-weight: bolder;
+}
+
+/* Top line of boxes */
+
+.product > .level {
+    color: #000;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+/* Middle line of boxes */
+.product > p {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+/* Buttons of boxes */
+.product > button {
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.product > button:hover {
+    background-color: #ec0000;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+footer {
+    margin-top: 30px;
+    color: #eee;
+    background-color: #000;
+    padding: 20px;
+    font-weight: bolder;
+}
+
+footer > span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: #444;
+}
